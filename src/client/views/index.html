@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <title>Test</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="logo">Logo</div>
+            <div class="nav">navigation</div>
+        </header>
+
+        <main>
+            <div id="inputCont">
+                <form class="" onsubmit="return Client.handleSubmit(event)">
+                    <h2>Input Text</h2>
+                    <textarea
+                        id="name"
+                        name="input"
+                        placeholder="enter your text"
+                    ></textarea>
+                    <input
+                        type="submit"
+                        name=""
+                        value="submit"
+                        onclick="return Client.handleSubmit(event)"
+                        onsubmit="return Client.handleSubmit(event)"
+                    />
+                </form>
+            </div>
+
+            <div id="resultCont">
+                <h2>Results:</h2>
+                <textarea name="results" id="results"></textarea>
+            </div>
+        </main>
+
+        <footer>
+            <p>2021 by Gary Nuñez</p>
+        </footer>
+    </body>
+</html>

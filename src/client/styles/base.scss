@@ -1,0 +1,19 @@
+main {
+    display: grid;
+    grid-template-columns: auto 50vw auto;
+    grid-template-rows: 5vh 35vh 35vh 10vh;
+    gap: 50px;
+    grid-template-areas:
+        '. . .'
+        '. i .'
+        '. o .'
+        '. . .';
+}
+
+#resultCont {
+    grid-area: o;
+}
+
+#inputCont {
+    grid-area: i;
+}
