@@ -1,7 +1,7 @@
 main {
     display: grid;
     grid-template-columns: auto 50vw auto;
-    grid-template-rows: 5vh 35vh 35vh 10vh;
+    grid-template-rows: 5vh 25vh 45vh 10vh;
     gap: 50px;
     grid-template-areas:
         '. . .'

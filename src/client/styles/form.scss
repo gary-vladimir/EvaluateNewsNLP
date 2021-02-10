@@ -8,12 +8,18 @@
 h2 {
     margin-left: 20px;
 }
-#name {
-    height: 15vh;
-}
 
 form {
     position: relative;
+    height: 100%;
+}
+
+#name {
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 1.2em;
+    border-radius: 25px;
 }
 
 textarea {
@@ -22,7 +28,7 @@ textarea {
     width: 90%;
     margin-left: 5%;
     margin-right: 5%;
-    height: 50%;
+    height: 70%;
     color: whitesmoke;
     border: none;
 }
@@ -32,6 +38,10 @@ textarea::placeholder {
 }
 
 input {
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
     background-color: darkcyan;
     color: aquamarine;
     width: 150px;
@@ -40,8 +50,8 @@ input {
     cursor: pointer;
     border-radius: 25px;
     font-size: 1.3em;
-    position: absolute;
-    bottom: 0px;
-    left: 50%;
-    transform: translateX(-50%);
+}
+
+input:hover {
+    box-shadow: 0 4px 8px 0 #0a1128, 0 6px 20px 0 #0a1128;
 }

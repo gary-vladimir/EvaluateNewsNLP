@@ -17,3 +17,10 @@ header {
     position: absolute;
     left: 20px;
 }
+
+.title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2em;
+}
