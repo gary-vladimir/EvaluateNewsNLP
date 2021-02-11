@@ -1,3 +1,5 @@
+const dotenv = require('dotenv');
+dotenv.config();
 var path = require('path');
 const express = require('express');
 const mockAPIResponse = require('./mockAPI.js');
@@ -9,6 +11,9 @@ var json = {
     message: 'this is a message',
     time: 'now',
 };
+
+
+var KEY = process.env.API_KEY,
 
 const app = express();
 app.use(cors());
@@ -36,4 +41,5 @@ app.get('/test', function (req, res) {
 // designates what port the app will listen to for incoming requests
 app.listen(8081, function () {
     console.log('Example app listening on port 8081!');
+    console.log(KEY);
 });
