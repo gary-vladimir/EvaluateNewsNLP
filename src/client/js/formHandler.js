@@ -6,7 +6,7 @@ function handleSubmit(event) {
 
     let res = Client.checkForName(formText);
 
-    const key = '76283593a01706c5bc3bfbf4e6e0698e';
+    const key = '';
 
     console.log('::: Form Submitted :::');
     if (res === true) {
