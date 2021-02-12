@@ -9,5 +9,5 @@ Download the zip file and cd into the folder
 `cd` into your new folder and run:
 - ```npm install```
 - ```npm run build-dev```
-- ```npm start``` to start the app
+- ```npm run start``` to start the app
 - this app runs on localhost:8081
