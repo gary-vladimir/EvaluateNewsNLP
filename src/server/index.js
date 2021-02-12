@@ -28,8 +28,9 @@ app.get('/', function (req, res) {
     res.sendFile('dist/index.html');
 });
 
-app.get('/test', function (req, res) {
-    res.json(mockAPIResponse);
+//send api key to client side
+app.post('/get_data', (req, res) => {
+    return { API_KEY };
 });
 
 // designates what port the app will listen to for incoming requests

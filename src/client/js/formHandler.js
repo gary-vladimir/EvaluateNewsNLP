@@ -6,9 +6,23 @@ function handleSubmit(event) {
 
     let res = Client.checkForName(formText);
 
+    //reciving api key from server side
+    const API_KEY = '';
     const key = '';
+    fetch('localhost:8081/get_data', {
+        method: 'POST',
+        mode: 'cors',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ text: API_KEY }),
+    })
+        .then((res) => res.json())
+        .then((data) => {
+            console.log(data);
+            key = data;
+        });
 
-    console.log('::: Form Submitted :::');
     if (res === true) {
         document.getElementById('inv').style.display = 'none';
         document.getElementById('loading').style.display = 'block';
