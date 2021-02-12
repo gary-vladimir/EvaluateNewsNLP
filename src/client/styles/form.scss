@@ -28,7 +28,6 @@ textarea {
     width: 90%;
     margin-left: 5%;
     margin-right: 5%;
-    height: 70%;
     color: whitesmoke;
     border: none;
 }
@@ -54,4 +53,23 @@ input {
 
 input:hover {
     box-shadow: 0 4px 8px 0 #0a1128, 0 6px 20px 0 #0a1128;
+}
+
+input:focus {
+    outline: none;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+#inv {
+    display: none;
+    background-color: darkred;
+    color: pink;
+    text-align: center;
+}
+
+li {
+    font-size: 1.5em;
 }

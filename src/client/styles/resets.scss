@@ -6,3 +6,16 @@ body {
     font-family: 'Poppins', sans-serif;
     position: relative;
 }
+
+#loading {
+    display: none;
+    z-index: 2;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #03045e;
+    text-align: center;
+    line-height: 100vh;
+    font-size: 3em;
+}

@@ -6,6 +6,7 @@
     </head>
 
     <body>
+        <div id="loading">Loading...</div>
         <header>
             <div class="logo">Logo</div>
             <div class="title">Evaluate Text With NLP</div>
@@ -21,6 +22,7 @@
                         name="input"
                         placeholder="enter URL"
                     ></textarea>
+                    <div id="inv">Inavlid Input Try Again</div>
                     <input
                         type="submit"
                         name=""
@@ -33,7 +35,13 @@
 
             <div id="resultCont">
                 <h2>Results:</h2>
-                <textarea name="results" id="results"></textarea>
+                <ul id="results">
+                    <li id="agreement"></li>
+                    <li id="subjectivity"></li>
+                    <li id="confidence"></li>
+                    <li id="irony"></li>
+                    <li id="score"></li>
+                </ul>
             </div>
         </main>
 
