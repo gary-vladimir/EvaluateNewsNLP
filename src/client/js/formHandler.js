@@ -12,6 +12,7 @@ function handleSubmit(event) {
         .then((res) => res.json())
         .then((data) => {
             key = data.key;
+            proceed(res, key);
             if (res === true) {
                 document.getElementById('inv').style.display = 'none';
                 document.getElementById('loading').style.display = 'block';
@@ -48,4 +49,12 @@ function handleSubmit(event) {
         });
 }
 
-export { handleSubmit };
+function proceed(res, key) {
+    if ((key != '') & (res === true)) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+export { handleSubmit, proceed };
