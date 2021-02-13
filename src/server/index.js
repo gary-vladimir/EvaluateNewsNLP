@@ -29,8 +29,8 @@ app.get('/', function (req, res) {
 });
 
 //send api key to client side
-app.post('/get_data', (req, res) => {
-    return { API_KEY };
+app.get('/get_data', (req, res) => {
+    res.send({ key: API_KEY });
 });
 
 // designates what port the app will listen to for incoming requests
